@@ -1,1 +1,1 @@
-window.App = Ember.Application.create();
+var app = angular.module('todoApp',['ngResource']);

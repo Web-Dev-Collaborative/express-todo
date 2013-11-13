@@ -1,8 +1,12 @@
 var root = process.cwd();
-
+console.log(root);
 module.exports = {
     'root': root,
-    'config': root + "/config",
-    'public': root + "/../public",
-    'env': 'development'
+    'paths': {
+      'views': root + '/private/views/',
+      'config': root + "/private/config",
+      'public': root + "/public"
+    },
+    'env': 'development',
+    'port': 3000
 };

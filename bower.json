@@ -6,13 +6,13 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "src/public/js/libs",
     "test",
     "tests"
   ],
   "dependencies": {
     "jquery": "~2.0.3",
-    "ember": "~1.1.2",
-    "handlebars": "~1.1.2"
+    "angular": "~1.2.0",
+    "bootstrap": "~3.0.2",
+    "angular-resource": "~1.2.0"
   }
 }

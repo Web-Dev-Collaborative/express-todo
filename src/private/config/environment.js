@@ -5,8 +5,8 @@ var settings = require('./settings');
 
 module.exports = function(app){
     // all environments
-    app.set('port', process.env.PORT || 3000);
-    app.set('views', path.join(settings.root, 'views'));
+    app.set('port', settings.port);
+    app.set('views', settings.paths.views);
     app.set('view engine', 'jade');
     app.set('view options', { layout: true });
     app.set('env', settings.env);
@@ -15,7 +15,7 @@ module.exports = function(app){
     app.use(express.logger('dev'));
     app.use(express.bodyParser());
     app.use(express.methodOverride());
-    app.use(less({ src: settings.public}));
+    app.use(less({ src: settings.paths.public}));
     
     
     // development only
