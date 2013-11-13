@@ -1,0 +1,16 @@
+doctype 5
+html(data-ng-app="todoApp")
+    head
+        title My title
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+        link(rel="stylesheet", href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css")
+        != renderStyles()
+        
+    body
+        block content
+        
+        script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+        script(type="text/javascript", src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
+        script(type="text/javascript", src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js")
+        != renderJs()
