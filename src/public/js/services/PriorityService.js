@@ -2,10 +2,10 @@ app.service('PriorityService', [function () {
     var self = this;
     
     this.map = [
-        {type: 'danger', description: 'Urgnet & Important', short: 'UI'},
-        {type: 'warning', description: 'Not Urget but Important', short: 'NUI'},
-        {type: 'info', description: 'Urgent but not Importnat', short: 'UNI'},
-        {type: 'success', description: 'Not Urgent & not Important', short: 'NUNI'}
+        {type: 'danger', description: 'Urgnet & Important', short: 'UI', color: 'red'},
+        {type: 'warning', description: 'Not Urget but Important', short: 'NUI', color: 'green'},
+        {type: 'info', description: 'Urgent but not Importnat', short: 'UNI', color: 'orange'},
+        {type: 'success', description: 'Not Urgent & not Important', short: 'NUNI', color: 'blue'}
     ];
     
     this.test = function () {
@@ -20,7 +20,7 @@ app.service('PriorityService', [function () {
     
     this.background = function (id) {
         return retrieve(id, function (item) {
-            return "btn-" + item.type;
+            return "tile-" + item.color;
         });
     };
     

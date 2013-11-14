@@ -26,6 +26,10 @@ app.controller('ToDoController',['$scope', 'ToDoService', 'PriorityService', fun
 
     };
     
+    $scope.onFocus = function(showRow){
+        $scope.isRowShowing = showRow;
+    }
+    
     $scope.save = function () {
         if($scope.form.$valid){
             var newItem = {

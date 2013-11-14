@@ -12,7 +12,7 @@
   "dependencies": {
     "jquery": "~2.0.3",
     "angular": "~1.2.0",
-    "bootstrap": "~3.0.2",
-    "angular-resource": "~1.2.0"
+    "angular-resource": "~1.2.0",
+    "metro-bootstrap": "*"
   }
 }

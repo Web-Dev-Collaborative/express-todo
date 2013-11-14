@@ -6,7 +6,10 @@ var environment = require('./config/environment');
 var app = express();
 
 environment(app);
-bundles(express, app);
 routes(app);
 
 http.createServer(app).listen(app.get('port'));
+
+app.configure(function(){
+    bundles(express, app);    
+});

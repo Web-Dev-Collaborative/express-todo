@@ -1,6 +1,6 @@
-module.exports = function (assets) {
-    assets.root = __dirname;
-    assets.addJs('../../public/js/**.js');
+var settings = require('./settings');
 
-    assets.addCss('../../public/css/**.css');
-};
+module.exports = function(assets) {
+  assets.root = settings.paths.public;
+  assets.addJs('/js/**.js');
+}
